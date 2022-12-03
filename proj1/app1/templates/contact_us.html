@@ -1,0 +1,133 @@
+<!Doctype html>
+<html lang="en">
+{%load static%}
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='{%static 'css/style.css'%}'>
+  <link rel='stylesheet' type='text/css' media='screen' href='{%static 'css/main.css'%}'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<body body id='bg' style="background-image: url('{%static 'images/cbg1.jpg'%}');">
+   {% include 'nav.html' %}
+</body>
+<h1><b>"CONTACT US"</b></h1>
+<h2>Got a question?We'd love to hear from you.Send us a message and we'll respond as soon as possible.</h2>   
+<br>
+<b>
+<form method="post">
+   <div class="con"><b>
+  {% csrf_token %}
+      {{form.as_p}}
+   </div></b>
+      <button type="submit" class="buton"><b>SUBMIT</b></button>
+</b>
+</form>
+</br>
+<main>
+   <a href="https://wa.me/03035919048"
+ target="_blank"><button class="btn btn--doar" ><b>Let's Chat</b><i id="ii" class="fa fa-whatsapp" style="font-size:50px;color:white"></button></a></i>
+   
+ </main> 
+<style>
+   
+   .con{
+      color:black;
+      margin-top:  3%;
+      font-size: 20px;
+      font-family:verdana;
+      margin-left: 1%;
+   }
+   h1{
+      text-align:center;
+      margin-top:1%;
+      color:black;
+   }
+   h2{
+      text-align:center;
+      font-size:30px;
+      color:green;
+      margin-top: 1%;
+   }
+   .buton{
+      background-color: white;
+      border: 4px solid black;
+      color:black;
+      text-align: center;
+      font-size: 30px;
+      margin: 30px 46px;
+      opacity: 0.8;
+      transition: 0.3s;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 20%; 
+      text-align:center;
+      
+     }
+    
+    .buton:hover {opacity: 2}
+
+    .button{
+      font-size: 130%;
+      }
+      .btn {
+         border-radius: 30px;
+         position: fixed;
+         right: 30px;
+         bottom: 20px;
+         font-weight: 700;
+         font-size: 180%;
+         text-decoration: none;
+         text-align: center;
+         transition: all .5s ease; 
+         
+       }
+       
+       .btn--doar {
+         
+         color: #fff;
+         padding-right: 8px;
+         background-color:#405d27;
+         -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+         clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+      }
+      .btn--doar:hover { 
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);  
+      }
+      
+      .btn--doar:after {
+        color: #e74c3c;
+        font-family: FontAwesome;
+        display: inline-block;
+        position: relative;
+        right: -55px;
+        transition: all 0.2s ease;
+      }
+      
+      .btn--doar:hover:after {
+        margin: -5px 15px;
+        right: 0px;
+      }
+      #ii{
+        background-color: green;
+        border-radius: 50px;
+        
+        
+      }
+    
+
+
+
+
+
+

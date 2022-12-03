@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="en">
+{%load static%}
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='{%static 'css/style.css'%}'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <title> Deen Explorer</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<body id='bg' style="background-image: url('{%static 'images/pbb.jpg'%}');">
+  {% include 'nav.html' %}
+  <div class="container">
+		<div class="vertical-center" style="text-align:center">
+      <a href="{% url 'male' %}">
+        <button type="button" class="button" style="width: 100%; margin-top: 35%"  ><b>BOYS SECTION</b></button>
+      </a>
+    </div>
+      <div class="vertical-center" style="text-align:center">
+      <a href="{% url 'female' %}">
+        <button type="button" class="button" style="width: 100%; margin-top: 15%" ><b>GIRLS SECTION</b></button>
+      </a>
+    </div>
+	</div>
+  
+</body>
+<style>
+div{
+    text-align:center;
+}
+</style>
+
+
+</html>
