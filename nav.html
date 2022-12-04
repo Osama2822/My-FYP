@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <style>
+    a:link, a:visited{
+      color: black;
+      display: inline-block;
+      }
+      .navbar{
+        background-color:rgba(17, 134, 138, 0.705);}
+      .navbar-toggler{
+        width: 47px;
+        height: 34px;
+        background-color: #7eb444;
+        border:none;
+    }
+      .navbar-toggler .line{
+        width: 100%;
+        float: right;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        }
+        
+        a{
+          margin-left:30px;
+        }
+        #uu{
+          flex: 1;
+          background: none !important;
+          color: #fff;
+          padding: 0.5rem;
+          text-align: center;
+          text-decoration: none;
+          transition: all 0.5s ease-out;
+          border-radius: 30px;
+        }
+        #uu:hover,
+#uu.focus {
+  background-color: #7eb444;
+  color: black;
+}
+        h3{
+          margin-left: -15px;
+          color:Maroon;
+        }
+        .blink {
+          animation: blink-animation 3s steps(6, start) infinite;
+          -webkit-animation: blink-animation 3s steps(6, start) infinite;
+        }
+        @keyframes blink-animation {
+          to {
+            visibility: hidden;
+          }
+        }
+        @-webkit-keyframes blink-animation {
+          to {
+            visibility: hidden;
+          }
+        }
+        i{
+          color:white;
+          padding-right: 3px;
+        }
+ </style>
+</head> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<body>
+</body>
+</html>
+<nav class="navbar navbar-custom navbar-expand-lg py-0 fs-5 pt-2">
+  <div class="container-fluid">
+    <h3 ><b><span class="blink">Deen Explorer</span></b></h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="line"></span> 
+      <span class="line"></span> 
+      <span class="line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="uu" class="nav-link " href="proj1/app1/templates/index.html"><b><i class="fa fa-home"></i>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a id="uu" class="nav-link" href="proj1/app1/templates/contact_us.html"><b><i class="fa fa-phone"></i>CONTACT US</b></a>
+        </li>
+        <li class="nav-item">
+          <a id="uu" class="nav-link" href="proj1/app1/templates/Add_to_favourite.html"><b><i class="fa fa-heart"></i>MY FAVOURITES</b></a>
+        </li>
+        <li class="nav-item">
+          <a id="uu" class="nav-link" href="proj1/app1/templates/register.html"><b><i class="fa fa-user-plus"></i>REGISTER</b></a>
+        </li>
+        <li class="nav-item">
+          <a  id="uu" class="nav-link" href="proj1/app1/templates/login.html"><b><i class="fa fa-sign-in"></i>LOGIN</b></a>
+        </li>
+        <li class="nav-item">
+          <a  id="uu" class="nav-link" href="proj1/app1/templates/password_reset.html"><b><i class="fa fa-sign-in"></i>Reset Password</b></a>
+        </li>
+      </ul>
+    </div> 
+  </div>
+  <span class="hello-msg" style="color:FireBrick; text-transform: uppercase"><b>I'M,{{request.user}}</b></span>
+  <div>
+  <a id="uu" style="color:maroon"class="hello-msg" href="proj1/app1/templates/logout.html"><b>LOGOUT</b></a>
+  </div>
+</nav>
