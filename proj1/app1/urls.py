@@ -5,7 +5,7 @@ from app1 import views
 from django.contrib.auth import views as auth_views 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', views.index, name='index'),
     path('contact_us/' , views.contact_us, name='contact_us'),
     path('modules/' , views.modules, name='modules'),
     path('module2/' , views.module2, name='module2'),
