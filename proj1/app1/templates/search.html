@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    {%load static%}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -8,13 +9,11 @@
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
   font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
+  padding: 25px 25px 15px 40px;
   margin-bottom: 12px;
 }
 
@@ -25,24 +24,33 @@
 }
 
 #myUL li a {
-  border: 1px solid #ddd;
+
   margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
+  background : none !important;;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
-  display: block
+  color:white;
+  display: block;
+  font-size: 22px;
+  margin-left:1%;
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #eee;
+  background: none !important;
+  color:white;
+  
+}
+h2{
+    color:white;
+    font-size: 35px;
+    text-align:center;
 }
 </style>
 </head>
-<body>
+<body id='bg' style="background-image: url('{%static 'images/sebg.jpg'%}');">
 
-<h2>Search Here</h2>
+<h2><i><b>Search Here</i></b></h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
