@@ -32,6 +32,7 @@ urlpatterns = [
     path('kalmas/' , views.kalmas, name='kalmas'),
     path('islamic/' , views.islamic, name='islamic'),
     path('search/' , views.search, name='search'),
+    path('prayer/' , views.prayer, name='prayer'),
 
 
 path('password_reset/',auth_views.PasswordResetView.as_view(),name='password_reset'),

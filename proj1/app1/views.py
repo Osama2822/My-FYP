@@ -53,7 +53,8 @@ def kalmas(request):
     return render(request, 'kalmas.html')
 def search(request):
     return render(request, 'search.html')
-
+def prayer(request):
+    return render(request, 'prayer.html')
 
 def register(request):
     if request.user.is_authenticated:
