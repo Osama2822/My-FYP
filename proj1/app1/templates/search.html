@@ -3,6 +3,7 @@
     {%load static%}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 * {
   box-sizing: border-box;
@@ -46,11 +47,19 @@ h2{
     font-size: 35px;
     text-align:center;
 }
+#bg{
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+
 </style>
 </head>
-<body id='bg' style="background-image: url('{%static 'images/sebg.jpg'%}');">
+<body id='bg' style="background-image: url('{%static 'images/search.jpg'%}');">
 
-<h2><i><b>Search Here</i></b></h2>
+<h2 ><i><b>Search Here</i></b></h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
@@ -59,7 +68,7 @@ h2{
   <li><a href="{% url 'How_to_perform_prayer' %}">How to perform prayer</a></li>
   <li><a href="{% url 'How_to_perform_ablution' %}">How to perform ablution</a></li>
   <li><a href="{% url 'Names_of_ALLAH_and_Tasbeehat' %}">Names_of_ALLAH_and_Tasbeehat</a></li>
-  <li><a href="{% url 'Names_of_ALLAH_and_Tasbeehat' %}">Names_of_ALLAH_and_Tasbeehat</a></li>
+  <li><a href="{% url 'prayer' %}">Prayer Time and Description</a></li>
   <li><a href="{% url 'pillars' %}">Pillars Of Islam</a></li>
   <li><a href="{% url 'kalmas' %}">SIx Kalmas</a></li>
   <li><a href="{% url 'islamic' %}">Islamic Kids Stories</a></li>
